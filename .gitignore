@@ -1,0 +1,24 @@
+/encodes/*
+!/encodes/.gitkeep
+/images/*
+!/images/.gitkeep
+/resources
+/venv
+
+/recog/gps circuit
+/recog/secreteKey/*
+!/recog/secreteKey/.gitkeep
+
+*.jpg
+
+en.pickle
+.env
+test*.py
+threading_test.py
+
+*.pptx
+
+**/__pycache__
+
+!projPic/*.jpg
+*.dat
