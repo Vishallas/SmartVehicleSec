@@ -33,5 +33,5 @@ class DatabaseHelper:
     def linkimage(self,imagelink,lat,long):
         print("link :",imagelink)
         # self.db.collection('VehicleData').document("imagedata").update({'link':f'{imagelink}'})
-        self.db.collection('VehicleData').document("location").update({'lat':f'{lat}','long':f'{long}',"time":firestore.SERVER_TIMESTAMP,'image_url':f'{imagelink}'})
+        self.db.collection('VehicleData').document("location").update({'lat':f'{lat}','long':f'{long}',"time":firestore.SERVER_TIMESTAMP,'image_url':f'{imagelink}','imgNo':str(self.imgNo+1)})
         self.db.collection('VehicleData').document("location").update({'image_url':f'{imagelink}'})
